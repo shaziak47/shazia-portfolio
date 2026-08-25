@@ -1,4 +1,4 @@
-# Adeel Khan — Portfolio Website
+# Shazia parveen — Portfolio Website
 
 A modern, animated portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** — inspired by premium developer portfolios with a dark theme, glassmorphism, and smooth scroll animations.
 
