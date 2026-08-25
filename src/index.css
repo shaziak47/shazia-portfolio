@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --color-accent: #00f5e9;
+  --color-accent-dim: #00c4bb;
+  --color-primary: #4758fc;
+  --color-surface: #0a0b14;
+  --color-surface-2: #111322;
+  --color-surface-3: #1a1d30;
+  --color-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background: var(--color-surface);
+  color: #e8eaf6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(0, 245, 233, 0.25);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-accent), var(--color-primary));
+  border-radius: 4px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #00f5e9 0%, #4758fc 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: rgba(17, 19, 34, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 245, 233, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 233, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.section-padding {
+  @apply px-5 py-20 md:px-10 lg:px-16 xl:px-24;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  @apply text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl;
+}
+
+.section-subtitle {
+  @apply mt-4 max-w-2xl text-base text-slate-400 md:text-lg;
+}
