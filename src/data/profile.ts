@@ -19,7 +19,7 @@ export const profile = {
   tagline:
     'Data Engineering · Machine Learning · Cloud · Full-Stack',
   bio: 'I architect scalable data pipelines, machine learning systems, and cloud-native applications. With experience across pharma, fintech, and enterprise SaaS, I help teams turn complex data into actionable products.',
-  email: 'madikhan1998@outlook.com',
+  email: 'zk778046@gmail.com',
   phone: '03064617510',
   location: 'Lahore, Pakistan',
   linkedin: 'https://www.linkedin.com/in/shazia-parveen-010068431/',
