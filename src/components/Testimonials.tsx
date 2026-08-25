@@ -9,7 +9,7 @@ export default function Testimonials() {
       <div className="glow-orb right-1/4 top-1/2 h-64 w-64 bg-purple-600/10" />
       <div className="relative mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             Testimonials
           </p>
           <h2 className="section-title">
@@ -24,11 +24,11 @@ export default function Testimonials() {
                 whileHover={{ y: -4 }}
                 className="glass flex h-full flex-col rounded-2xl p-7"
               >
-                <Quote className="h-8 w-8 text-cyan-500/40" />
+                <Quote className="h-8 w-8 text-pink-500/40" />
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-300 italic">
                   &ldquo;{t.text}&rdquo;
                 </p>
-                <p className="mt-5 text-sm font-medium text-cyan-400">— {t.author}</p>
+                <p className="mt-5 text-sm font-medium text-pink-400">— {t.author}</p>
               </motion.div>
             </FadeIn>
           ))}

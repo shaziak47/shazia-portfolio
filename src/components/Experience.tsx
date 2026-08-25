@@ -6,7 +6,7 @@ export default function Experience() {
     <section id="experience" className="section-padding relative">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             Career
           </p>
           <h2 className="section-title">
@@ -19,7 +19,7 @@ export default function Experience() {
         </FadeIn>
 
         <div className="relative mt-16">
-          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-cyan-500/50 via-indigo-500/30 to-transparent md:left-1/2 md:block" />
+          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-pink-500/50 via-rose-500/30 to-transparent md:left-1/2 md:block" />
 
           <div className="space-y-12">
             {experiences.map((exp, i) => (
@@ -35,13 +35,13 @@ export default function Experience() {
                       i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'
                     }`}
                   >
-                    <div className="glass rounded-2xl p-7 transition hover:border-cyan-500/20">
+                    <div className="glass rounded-2xl p-7 transition hover:border-pink-500/20">
                       <div
                         className={`mb-3 flex flex-wrap items-center gap-2 ${
                           i % 2 === 0 ? 'md:justify-end' : ''
                         }`}
                       >
-                        <span className="rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-400">
+                        <span className="rounded-full bg-pink-500/10 px-3 py-1 text-xs font-medium text-pink-400">
                           {exp.period}
                         </span>
                         {exp.location && (
@@ -51,7 +51,7 @@ export default function Experience() {
                       <h3 className="font-display text-xl font-semibold text-white">
                         {exp.role}
                       </h3>
-                      <p className="mt-1 text-indigo-400">{exp.company}</p>
+                      <p className="mt-1 text-pink-300">{exp.company}</p>
                       <ul
                         className={`mt-4 space-y-2 ${
                           i % 2 === 0 ? 'md:text-right' : ''
@@ -68,7 +68,7 @@ export default function Experience() {
                       </ul>
                     </div>
                   </div>
-                  <div className="absolute left-4 top-7 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-cyan-400 bg-surface md:left-1/2 md:block" />
+                  <div className="absolute left-4 top-7 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-pink-400 bg-surface md:left-1/2 md:block" />
                 </div>
               </FadeIn>
             ))}
@@ -77,13 +77,13 @@ export default function Experience() {
 
         <FadeIn delay={0.3}>
           <div className="mt-16 glass rounded-2xl p-8 text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-cyan-400">
+            <p className="text-sm font-semibold uppercase tracking-widest text-pink-400">
               Education
             </p>
             <h3 className="mt-2 font-display text-2xl font-bold text-white">
               {education.degree}
             </h3>
-            <p className="mt-1 text-indigo-400">{education.school}</p>
+            <p className="mt-1 text-pink-300">{education.school}</p>
             <p className="mt-2 text-sm text-slate-500">
               {education.period} · {education.location}
             </p>

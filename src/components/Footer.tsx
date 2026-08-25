@@ -12,17 +12,17 @@ export default function Footer() {
         </p>
         <p className="flex items-center gap-1 text-sm text-slate-500">
           Built with React & Framer Motion
-          <Heart className="mx-1 h-3.5 w-3.5 fill-cyan-500 text-cyan-500" />
+          <Heart className="mx-1 h-3.5 w-3.5 fill-pink-500 text-pink-500" />
           {year}
         </p>
         <div className="flex gap-6 text-sm text-slate-500">
-          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
             LinkedIn
           </a>
-          <a href={profile.fiverr} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+          <a href={profile.fiverr} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
             Fiverr
           </a>
-          <a href={profile.upwork} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+          <a href={profile.upwork} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
             Upwork
           </a>
         </div>

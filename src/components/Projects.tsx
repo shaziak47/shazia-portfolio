@@ -18,10 +18,10 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section-padding relative bg-surface-2/50">
-      <div className="glow-orb -left-20 bottom-0 h-72 w-72 bg-cyan-500/10" />
+      <div className="glow-orb -left-20 bottom-0 h-72 w-72 bg-pink-500/10" />
       <div className="relative mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             Portfolio
           </p>
           <h2 className="section-title">
@@ -41,7 +41,7 @@ export default function Projects() {
                 onClick={() => setActive(filter)}
                 className={`rounded-full px-5 py-2 text-sm font-medium transition ${
                   active === filter
-                    ? 'bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow-lg shadow-cyan-500/20'
+                    ? 'bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-lg shadow-pink-500/20'
                     : 'border border-white/10 bg-white/5 text-slate-400 hover:text-white'
                 }`}
               >
@@ -72,12 +72,12 @@ export default function Projects() {
                       {project.source}
                     </span>
                     {project.featured && (
-                      <span className="rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-400">
+                      <span className="rounded-full bg-pink-500/10 px-3 py-1 text-xs font-medium text-pink-400">
                         Featured
                       </span>
                     )}
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-white transition group-hover:text-cyan-300">
+                  <h3 className="font-display text-xl font-semibold text-white transition group-hover:text-pink-300">
                     {project.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-400">

@@ -33,10 +33,10 @@ const platforms = [
 export default function Contact() {
   return (
     <section id="contact" className="section-padding relative">
-      <div className="glow-orb left-1/4 bottom-0 h-80 w-80 bg-cyan-500/10" />
+      <div className="glow-orb left-1/4 bottom-0 h-80 w-80 bg-pink-500/10" />
       <div className="relative mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             Contact
           </p>
           <h2 className="section-title">
@@ -56,28 +56,28 @@ export default function Contact() {
               <div className="mt-8 space-y-5">
                 <a
                   href={`mailto:${profile.email}`}
-                  className="group flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 transition hover:border-cyan-500/20"
+                  className="group flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 transition hover:border-pink-500/20"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-cyan-500/10 text-cyan-400">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-pink-500/10 text-pink-400">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-500">Email</p>
-                    <p className="font-medium text-white group-hover:text-cyan-300">
+                    <p className="font-medium text-white group-hover:text-pink-300">
                       {profile.email}
                     </p>
                   </div>
                 </a>
                 <a
                   href={`tel:${profile.phone.replace(/\s/g, '')}`}
-                  className="group flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 transition hover:border-cyan-500/20"
+                  className="group flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 transition hover:border-pink-500/20"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-indigo-500/10 text-indigo-400">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-pink-500/10 text-pink-300">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-500">Phone</p>
-                    <p className="font-medium text-white group-hover:text-cyan-300">
+                    <p className="font-medium text-white group-hover:text-pink-300">
                       {profile.phone}
                     </p>
                   </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   whileHover={{ x: 4 }}
-                  className="group glass flex items-center justify-between rounded-2xl p-6 transition hover:border-cyan-500/20"
+                  className="group glass flex items-center justify-between rounded-2xl p-6 transition hover:border-pink-500/20"
                 >
                   <div className="flex items-center gap-4">
                     <div
@@ -130,7 +130,7 @@ export default function Contact() {
                       <p className={`mt-1 text-xs ${platform.textColor}`}>{platform.stat}</p>
                     </div>
                   </div>
-                  <ExternalLink className="h-5 w-5 text-slate-600 transition group-hover:text-cyan-400" />
+                  <ExternalLink className="h-5 w-5 text-slate-600 transition group-hover:text-pink-400" />
                 </motion.a>
               ))}
             </div>

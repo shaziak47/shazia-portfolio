@@ -24,7 +24,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-10 lg:px-16">
         <a href="#home" className="font-display text-xl font-bold">
-          <span className="gradient-text">AK</span>
+          <span className="gradient-text">SP</span>
           <span className="text-white">.</span>
         </a>
 
@@ -33,7 +33,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-slate-400 transition hover:text-cyan-400"
+                className="text-sm text-slate-400 transition hover:text-pink-400"
               >
                 {link.label}
               </a>
@@ -42,7 +42,7 @@ export default function Navbar() {
           <li>
             <a
               href="#contact"
-              className="rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-md shadow-cyan-500/20 transition hover:shadow-cyan-500/40"
+              className="rounded-full bg-gradient-to-r from-pink-500 to-rose-600 px-5 py-2 text-sm font-semibold text-white shadow-md shadow-pink-500/20 transition hover:shadow-pink-500/40"
             >
               Hire Me
             </a>
@@ -72,7 +72,7 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="block rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5 hover:text-cyan-400"
+                    className="block rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5 hover:text-pink-400"
                   >
                     {link.label}
                   </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
                   href={profile.fiverr}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 px-4 py-3 text-center font-semibold text-white"
+                  className="block rounded-full bg-gradient-to-r from-pink-500 to-rose-600 px-4 py-3 text-center font-semibold text-white"
                 >
                   Hire on Fiverr
                 </a>

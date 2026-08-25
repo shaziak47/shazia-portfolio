@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="section-padding relative">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             About Me
           </p>
           <h2 className="section-title">
@@ -65,9 +65,9 @@ export default function About() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="glass group flex gap-4 rounded-2xl p-5 transition hover:border-cyan-500/20"
+                  className="glass group flex gap-4 rounded-2xl p-5 transition hover:border-pink-500/20"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 text-cyan-400 transition group-hover:from-cyan-500/30 group-hover:to-indigo-500/30">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 text-pink-400 transition group-hover:from-pink-500/30 group-hover:to-rose-500/30">
                     <item.icon className="h-6 w-6" />
                   </div>
                   <div>

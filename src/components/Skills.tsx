@@ -7,7 +7,7 @@ export default function Skills() {
     <section id="skills" className="section-padding relative">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             My Toolkit
           </p>
           <h2 className="section-title">
@@ -30,9 +30,9 @@ export default function Skills() {
                   <span
                     className={`rounded-full px-3 py-1 text-xs font-medium ${
                       group.level === 'Expert'
-                        ? 'bg-cyan-500/10 text-cyan-400'
+                        ? 'bg-pink-500/10 text-pink-400'
                         : group.level === 'Advanced'
-                          ? 'bg-indigo-500/10 text-indigo-400'
+                          ? 'bg-pink-500/10 text-pink-300'
                           : 'bg-slate-500/10 text-slate-400'
                     }`}
                   >
@@ -47,7 +47,7 @@ export default function Skills() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: j * 0.03 }}
-                      className="rounded-lg border border-white/5 bg-white/[0.03] px-3 py-1.5 text-sm text-slate-300 transition hover:border-cyan-500/20 hover:text-white"
+                      className="rounded-lg border border-white/5 bg-white/[0.03] px-3 py-1.5 text-sm text-slate-300 transition hover:border-pink-500/20 hover:text-white"
                     >
                       {skill}
                     </motion.span>

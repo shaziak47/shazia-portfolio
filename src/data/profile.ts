@@ -184,7 +184,7 @@ export const projects: Project[] = [
     category: 'Enterprise',
     source: 'Resume',
     featured: true,
-    gradient: 'from-cyan-500/20 to-blue-600/20',
+    gradient: 'from-pink-500/20 to-rose-600/20',
   },
   {
     title: 'ML Skin Lesion Classifier',
@@ -222,7 +222,7 @@ export const projects: Project[] = [
     tags: ['AWS Redshift', 'PySpark', 'Pandas', 'Data Modeling'],
     category: 'Enterprise',
     source: 'Resume',
-    gradient: 'from-sky-500/20 to-indigo-600/20',
+    gradient: 'from-pink-400/20 to-fuchsia-600/20',
   },
   {
     title: 'Computer Vision Pipeline',
@@ -258,7 +258,7 @@ export const projects: Project[] = [
     tags: ['AWS', 'SaaS', 'Python', 'Cloud'],
     category: 'Enterprise',
     source: 'Resume',
-    gradient: 'from-cyan-500/20 to-slate-600/20',
+    gradient: 'from-rose-500/20 to-pink-700/20',
   },
   {
     title: 'Enterprise Microservices Suite',
@@ -267,7 +267,7 @@ export const projects: Project[] = [
     tags: ['Spring Boot', 'Angular', 'Vue.js', 'CI/CD'],
     category: 'Enterprise',
     source: 'Resume',
-    gradient: 'from-blue-500/20 to-cyan-600/20',
+    gradient: 'from-fuchsia-500/20 to-pink-600/20',
   },
   {
     title: 'Python Web Scraping Bots',
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     tags: ['Django', 'React', 'PostgreSQL', 'Deployment'],
     category: 'Freelance',
     source: 'Upwork',
-    gradient: 'from-indigo-500/20 to-blue-600/20',
+    gradient: 'from-pink-500/20 to-rose-700/20',
   },
 ]
 

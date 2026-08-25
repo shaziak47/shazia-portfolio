@@ -5,10 +5,10 @@ import FadeIn from './FadeIn'
 export default function Services() {
   return (
     <section id="services" className="section-padding relative bg-surface-2/50">
-      <div className="glow-orb right-0 top-0 h-64 w-64 bg-indigo-600/10" />
+      <div className="glow-orb right-0 top-0 h-64 w-64 bg-rose-600/10" />
       <div className="relative mx-auto max-w-7xl">
         <FadeIn>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-400">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-400">
             What I Offer
           </p>
           <h2 className="section-title">
@@ -27,13 +27,13 @@ export default function Services() {
                 href={service.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group glass flex h-full flex-col rounded-2xl p-7 transition hover:border-cyan-500/25 hover:shadow-lg hover:shadow-cyan-500/5"
+                className="group glass flex h-full flex-col rounded-2xl p-7 transition hover:border-pink-500/25 hover:shadow-lg hover:shadow-pink-500/5"
               >
                 <div className="mb-5 flex items-start justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 text-cyan-400 transition group-hover:scale-110">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 text-pink-400 transition group-hover:scale-110">
                     <service.icon className="h-6 w-6" />
                   </div>
-                  <ArrowUpRight className="h-5 w-5 text-slate-600 transition group-hover:text-cyan-400" />
+                  <ArrowUpRight className="h-5 w-5 text-slate-600 transition group-hover:text-pink-400" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-white">
                   {service.title}
