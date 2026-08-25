@@ -22,9 +22,7 @@ export const profile = {
   email: 'madikhan1998@outlook.com',
   phone: '03064617510',
   location: 'Lahore, Pakistan',
-  linkedin: 'https://www.linkedin.com/in/adeel-khan-471135161/',
-  fiverr: 'https://www.fiverr.com/hamzak47',
-  upwork: 'https://upwork.com/freelancers/adeelkhan133',
+  linkedin: 'https://www.linkedin.com/in/shazia-parveen-010068431/',
   fiverrRating: 4.8,
   fiverrReviews: 85,
   fiverrLevel: 'Level 2 Seller',
@@ -36,7 +34,6 @@ export type Service = {
   description: string
   icon: LucideIcon
   tags: string[]
-  link: string
 }
 
 export const services: Service[] = [
@@ -46,7 +43,6 @@ export const services: Service[] = [
       'Custom Django, Flask, and React applications — from MVPs to production-grade platforms with REST APIs and modern UI.',
     icon: Code2,
     tags: ['Django', 'Flask', 'React', 'REST APIs'],
-    link: 'https://www.fiverr.com/hamzak47/create-python-web-and-desktop-based-applications',
   },
   {
     title: 'AI SaaS & Software',
@@ -54,7 +50,6 @@ export const services: Service[] = [
       'End-to-end AI products: chatbots, LLM integrations, predictive models, and intelligent automation for your business.',
     icon: Brain,
     tags: ['OpenAI', 'TensorFlow', 'ML Pipelines', 'SaaS'],
-    link: 'https://www.fiverr.com/hamzak47/create-ai-bots-and-applications',
   },
   {
     title: 'Web Scraping & Automation Bots',
@@ -62,7 +57,6 @@ export const services: Service[] = [
       'Reliable data extraction, Selenium automation, and workflow bots that save hours of manual work every week.',
     icon: Bot,
     tags: ['Selenium', 'Python', 'ETL', 'Automation'],
-    link: 'https://www.fiverr.com/hamzak47/scrape-and-create-bots-for-you',
   },
   {
     title: 'Data Engineering & ETL',
@@ -70,7 +64,6 @@ export const services: Service[] = [
       'Large-scale pipelines on AWS EMR, Azure Data Factory, and PySpark — built for pharma, analytics, and research.',
     icon: Database,
     tags: ['AWS EMR', 'PySpark', 'MongoDB', 'Redshift'],
-    link: profile.upwork,
   },
   {
     title: 'Cloud & Microservices',
@@ -78,7 +71,6 @@ export const services: Service[] = [
       'Scalable backends with AWS Lambda, S3, Docker, and microservice architectures designed for high availability.',
     icon: Cloud,
     tags: ['AWS', 'Lambda', 'Docker', 'CI/CD'],
-    link: profile.linkedin,
   },
   {
     title: 'Full-Stack Consulting',
@@ -86,7 +78,6 @@ export const services: Service[] = [
       'Architecture reviews, tech stack selection, and hands-on delivery for startups and enterprise teams.',
     icon: Layers,
     tags: ['Agile', 'System Design', 'Team Lead', 'Mentoring'],
-    link: profile.fiverr,
   },
 ]
 

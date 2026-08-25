@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import { navLinks, profile } from '../data/profile'
+import { navLinks } from '../data/profile'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -80,12 +80,11 @@ export default function Navbar() {
               ))}
               <li className="mt-2">
                 <a
-                  href={profile.fiverr}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
+                  onClick={() => setMobileOpen(false)}
                   className="block rounded-full bg-gradient-to-r from-pink-500 to-rose-600 px-4 py-3 text-center font-semibold text-white"
                 >
-                  Hire on Fiverr
+                  Hire Me
                 </a>
               </li>
             </ul>

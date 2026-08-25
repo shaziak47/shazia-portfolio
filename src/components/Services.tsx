@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react'
 import { services } from '../data/profile'
 import FadeIn from './FadeIn'
 
@@ -15,7 +14,7 @@ export default function Services() {
             Services & <span className="gradient-text">Expertise</span>
           </h2>
           <p className="section-subtitle">
-            From Fiverr gigs to enterprise consulting — comprehensive development services
+            From freelance gigs to enterprise consulting — comprehensive development services
             to bring your ideas to life.
           </p>
         </FadeIn>
@@ -23,17 +22,11 @@ export default function Services() {
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, i) => (
             <FadeIn key={service.title} delay={i * 0.08}>
-              <a
-                href={service.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group glass flex h-full flex-col rounded-2xl p-7 transition hover:border-pink-500/25 hover:shadow-lg hover:shadow-pink-500/5"
-              >
+              <div className="glass flex h-full flex-col rounded-2xl p-7 transition hover:border-pink-500/25 hover:shadow-lg hover:shadow-pink-500/5">
                 <div className="mb-5 flex items-start justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 text-pink-400 transition group-hover:scale-110">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 text-pink-400">
                     <service.icon className="h-6 w-6" />
                   </div>
-                  <ArrowUpRight className="h-5 w-5 text-slate-600 transition group-hover:text-pink-400" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-white">
                   {service.title}
@@ -51,7 +44,7 @@ export default function Services() {
                     </span>
                   ))}
                 </div>
-              </a>
+              </div>
             </FadeIn>
           ))}
         </div>

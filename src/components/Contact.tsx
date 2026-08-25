@@ -6,23 +6,18 @@ import FadeIn from './FadeIn'
 const platforms = [
   {
     name: 'Fiverr',
-    handle: '@hamzak47',
-    url: profile.fiverr,
     color: 'from-emerald-500/20 to-green-600/20',
     textColor: 'text-emerald-400',
     stat: `${profile.fiverrRating}★ · ${profile.fiverrReviews} reviews`,
   },
   {
     name: 'Upwork',
-    handle: 'adeelkhan133',
-    url: profile.upwork,
     color: 'from-green-500/20 to-emerald-600/20',
     textColor: 'text-green-400',
     stat: 'Top Rated Freelancer',
   },
   {
     name: 'LinkedIn',
-    handle: 'adeel-khan-471135161',
     url: profile.linkedin,
     color: 'from-blue-500/20 to-sky-600/20',
     textColor: 'text-blue-400',
@@ -43,7 +38,7 @@ export default function Contact() {
             Let&apos;s <span className="gradient-text">Work Together</span>
           </h2>
           <p className="section-subtitle">
-            Have a project in mind? Reach out via email or hire me on Fiverr or Upwork.
+            Have a project in mind? Reach out via email, phone, or LinkedIn.
           </p>
         </FadeIn>
 
@@ -97,42 +92,68 @@ export default function Contact() {
 
           <FadeIn delay={0.2}>
             <div className="space-y-4">
-              {platforms.map((platform, i) => (
-                <motion.a
-                  key={platform.name}
-                  href={platform.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  whileHover={{ x: 4 }}
-                  className="group glass flex items-center justify-between rounded-2xl p-6 transition hover:border-pink-500/20"
-                >
-                  <div className="flex items-center gap-4">
-                    <div
-                      className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${platform.color}`}
-                    >
-                      {platform.name === 'LinkedIn' ? (
-                        <Linkedin className={`h-6 w-6 ${platform.textColor}`} />
-                      ) : (
-                        <span className={`font-display text-lg font-bold ${platform.textColor}`}>
-                          {platform.name[0]}
-                        </span>
-                      )}
+              {platforms.map((platform, i) => {
+                const content = (
+                  <>
+                    <div className="flex items-center gap-4">
+                      <div
+                        className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${platform.color}`}
+                      >
+                        {platform.name === 'LinkedIn' ? (
+                          <Linkedin className={`h-6 w-6 ${platform.textColor}`} />
+                        ) : (
+                          <span className={`font-display text-lg font-bold ${platform.textColor}`}>
+                            {platform.name[0]}
+                          </span>
+                        )}
+                      </div>
+                      <div>
+                        <p className="font-display font-semibold text-white">
+                          {platform.name}
+                        </p>
+                        <p className={`mt-1 text-xs ${platform.textColor}`}>{platform.stat}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-display font-semibold text-white">
-                        {platform.name}
-                      </p>
-                      <p className="text-sm text-slate-500">{platform.handle}</p>
-                      <p className={`mt-1 text-xs ${platform.textColor}`}>{platform.stat}</p>
-                    </div>
-                  </div>
-                  <ExternalLink className="h-5 w-5 text-slate-600 transition group-hover:text-pink-400" />
-                </motion.a>
-              ))}
+                    {'url' in platform && platform.url ? (
+                      <ExternalLink className="h-5 w-5 text-slate-600 transition group-hover:text-pink-400" />
+                    ) : null}
+                  </>
+                )
+
+                const className =
+                  'glass flex items-center justify-between rounded-2xl p-6' +
+                  ('url' in platform && platform.url
+                    ? ' group transition hover:border-pink-500/20'
+                    : '')
+
+                return 'url' in platform && platform.url ? (
+                  <motion.a
+                    key={platform.name}
+                    href={platform.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    whileHover={{ x: 4 }}
+                    className={className}
+                  >
+                    {content}
+                  </motion.a>
+                ) : (
+                  <motion.div
+                    key={platform.name}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className={className}
+                  >
+                    {content}
+                  </motion.div>
+                )
+              })}
             </div>
           </FadeIn>
         </div>
